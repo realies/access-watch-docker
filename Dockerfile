@@ -8,7 +8,7 @@ run apk update && apk upgrade && \
  cd /access-watch && \
  git checkout ${commit} && \
  npm install && \
- echo "PORT=\${port:-3000} npm start config/custom" > /init.sh && \
+ echo "PORT=\${port:-3000} npm start /config.js" > /init.sh && \
  chmod +x /init.sh && \
  apk del build-dependencies && \
  rm -rf /var/cache/apk/*
