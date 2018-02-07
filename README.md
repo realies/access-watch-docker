@@ -6,7 +6,7 @@ Access Watch is built as a real-time streaming processor handling logs from inpu
 
 Access Watch is currently in **beta** and is already covering multiple great use cases.
 
-## Typical usage
+## Typical Usage
 ```
 docker run -d --name access-watch \
 -v ~/nginx.js:/config.js:ro \
