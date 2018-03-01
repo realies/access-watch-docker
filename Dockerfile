@@ -1,6 +1,6 @@
 from alpine:latest
 maintainer realies <docker@reali.es>
-env commit bab34ef
+env commit f4f2959
 run apk update && apk upgrade && \
  apk add --virtual build-dependencies git && \
  apk add nodejs && \
