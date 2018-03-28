@@ -3,7 +3,7 @@ maintainer realies <docker@reali.es>
 env commit 28b0acf
 run apk update && apk upgrade && \
  apk add --virtual build-dependencies git && \
- apk add nodejs && \
+ apk add nodejs libc6-compat && \
  git clone -n https://github.com/access-watch/access-watch.git && \
  cd /access-watch && \
  git checkout ${commit} && \
