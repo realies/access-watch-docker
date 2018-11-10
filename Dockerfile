@@ -1,6 +1,6 @@
 from alpine:latest
 maintainer realies <docker@reali.es>
-env commit f2c2ef8
+env commit 2f3fda0
 run apk update && apk upgrade && \
  apk add --virtual build-dependencies git && \
  apk add nodejs npm libc6-compat && \
